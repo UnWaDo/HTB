@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div>
+        <h3>Stop bot</h3>
+        <form action="/stop" method="post">
+            <div> {{ stop_form.stop }} </div>
+        </form>
+</div>
+
+{% endblock %}

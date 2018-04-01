@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% if message is not none %}
+        <div style="color:{{ message.color }}"> <a> {{ message.text }} </a> </div>
+        <br>
+        <br>
+    {% endif %}
+
+    {% block content %} {% endblock %}
+
+</body>
+</html>

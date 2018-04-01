@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    <div>
+        <h3>Start bot</h3>
+        <form action="/start" method="post">
+            <div> <a>{{ start_form.token_field.label }}</a> {{ start_form.token_field }} </div>
+            <br>
+            <div> <a>{{ start_form.is_new_field.label }}</a>{{ start_form.is_new_field }} </div>
+            <br>
+            <div> {{ start_form.submit }} </div>
+        </form>
+    </div>
+{% endblock %}
